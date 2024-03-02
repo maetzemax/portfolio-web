@@ -1,0 +1,11 @@
+/* design-tokens.css */
+:root {
+    --color-primary: #0022ff;
+    --color-secondary: #6c757d;
+    
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    /* Define more design tokens as needed */
+}
+  

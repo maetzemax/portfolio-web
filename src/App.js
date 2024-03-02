@@ -1,15 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Button from './ui/buttons/Button';
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <img
-      src="https://i.imgur.com/MK3eW3Am.jpg"
+class Profile extends Component {
+  render() {
+    return <img
+      src="https://i.imgur.com/MK3eW3As.jpg"
       alt="Katherine Johnson"
     />
-    </div>
-  );
+  };
 }
 
-export default App;
+export default function Gallery() {
+  return (
+    <section>
+      <h1>Amazing scientists</h1>
+      <Profile />
+      <Profile />
+      <Profile />
+
+      <Button name="Cool Button"/>
+    </section>
+  );
+}
