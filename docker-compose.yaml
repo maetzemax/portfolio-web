@@ -6,3 +6,5 @@ services:
       - "8080:80"
     volumes:
       - ./portfolio-web:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    command: "/bin/sh -c 'exec nginx -g \"daemon off;\"'"
